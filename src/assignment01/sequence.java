@@ -1,6 +1,4 @@
 package assignment01;
-
-
 /**
  * 
  * The main method in this class shows three circles of different colors and sizes to the screen
@@ -14,7 +12,6 @@ import java.applet.Applet;
     {
        
         public void paint (Graphics g)
-        
         {
         }
     }
