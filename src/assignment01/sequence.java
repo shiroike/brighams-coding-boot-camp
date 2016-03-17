@@ -21,5 +21,10 @@ import java.applet.Applet;
             g.drawRect(300,215,100,100);
             g.setColor(Color.yellow);
             g.fillOval(200, 200, 100, 100);
+            g.setColor(Color.blue);
+            g.fillRect(400, 400, 100, 100);
+            g.setColor(Color.pink);
+            g.fillArc(200, 400, 100, 100, 90, 300);
+            
         }
     }
