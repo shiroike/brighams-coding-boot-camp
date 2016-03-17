@@ -19,5 +19,9 @@ import java.applet.Applet;
             g.drawOval(80,190,50,50);
             g.setColor(Color.green);
             g.drawRect(300,215,100,100);
+            g.setColor(Color.yellow);
+            g.fillOval(200, 200, 100, 100);
+            
+      
         }
     }

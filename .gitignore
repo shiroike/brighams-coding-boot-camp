@@ -26,3 +26,5 @@ nbproject/project.properties
 nbproject/project.xml
 /build/
 applet.policy
+
+nbproject/private/private.xml
