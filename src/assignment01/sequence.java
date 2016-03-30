@@ -25,6 +25,10 @@ import java.applet.Applet;
             g.fillRect(400, 400, 100, 100);
             g.setColor(Color.pink);
             g.fillArc(200, 400, 100, 100, 90, 300);
+            g.fillOval(400, 400, 200, 200);
+            g.drawOval(200, 200, 200, 200);
+            g.drawOval(200, 400, 200, 200);
+            g.drawOval(400, 200, 200, 200);
             
         }
     }
