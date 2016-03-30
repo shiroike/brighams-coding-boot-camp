@@ -31,6 +31,8 @@ import java.applet.Applet;
             g.drawOval(400, 200, 200, 200);
             g.fillArc(500, 150, 100, 100, 90, 300);
             g.fillArc(170, 170, 100, 100, 180, 300);
-            
+            g.setColor(Color.blue);
+            g.fillOval(500, 450, 10, 10);
+            g.fillOval(450, 500, 10, 10);
         }
     }
