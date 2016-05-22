@@ -14,12 +14,10 @@ public class areaPerimeterCircle {
          */
         
         double  radius = 3.2;
+     
+        double area = Math.PI * Math.pow(radius, 2);
         
-        final double PI = 3.13159;
-        
-        double area = PI * radius * radius;
-        
-        double perimeter = PI * 2 * radius;
+        double perimeter = Math.PI * 2 * radius;
         
         System.out.println("The perimeter of the circle with a radius of 3.2 inches is " + perimeter );
         System.out.println("The area of the same circle is " + area );
