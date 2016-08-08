@@ -14,7 +14,7 @@ public static void main(String args[])
          */
         
          double  radius = 3.2;
-         double area = Math.PI * Math.sqrt(radius);
+         double area = Math.PI * Math.pow(radius,2);
          double perimeter = 2 * Math.PI * radius;
                
        System.out.println("The perimeter of a circle with a radius of 3.2 inches is " + perimeter + " inches");
