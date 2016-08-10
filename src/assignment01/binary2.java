@@ -21,7 +21,7 @@ public class binary2 {
         decimalNumber = decimalNumber / 2;
 
         //Second Bit
-        binaryNumber = String.format("%d%s", decimalNumber % 2, binaryNumber);
+        binaryNumber = String.format("%s%s", decimalNumber % 2, binaryNumber);
         decimalNumber = decimalNumber / 2;
 
         //Third Bit
