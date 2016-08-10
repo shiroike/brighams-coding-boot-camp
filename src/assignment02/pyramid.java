@@ -1,4 +1,3 @@
-
 package assignment02;
 
 import javax.swing.JOptionPane;
@@ -48,7 +47,6 @@ String x_pos = JOptionPane.showInputDialog(this, "X Position?");
     g.drawLine(x - newSize, y + (newSize/2), x + newSize, 10 + newSize);
     g.drawLine(x + newSize, 10 + newSize, x + (newSize *2), y + (newSize/2));
     
-
     
     
     //Second Pyramid
@@ -84,6 +82,7 @@ String x_pos = JOptionPane.showInputDialog(this, "X Position?");
     g.drawLine(x - newSize, y + (newSize/2), x + newSize, 10 + newSize);
     g.drawLine(x + newSize, 10 + newSize, x + (newSize *2), y + (newSize/2));
        
+  
   } 
 }
  
