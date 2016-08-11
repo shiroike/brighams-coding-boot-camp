@@ -38,50 +38,46 @@ String x_pos = JOptionPane.showInputDialog(this, "X Position?");
     // Draw First Pyramid (recommend that drawing start at top of pyramid)
     // Remember to look up drawline() method in the book for usage. I removed the parameters in the code below for you to implement.
     //top + middle
-    
-    g.drawLine(x, y, x + newSize, 10+newSize);
+    g.drawLine(x, y, x + newSize, y+newSize);
     g.drawLine(x, y, x - newSize, y+(newSize/2));
     g.drawLine(x, y, x + (newSize *2), y+(newSize/2));
 
     //bottom
-    g.drawLine(x - newSize, y + (newSize/2), x + newSize, 10 + newSize);
-    g.drawLine(x + newSize, 10 + newSize, x + (newSize *2), y + (newSize/2));
+    g.drawLine(x - newSize, y + (newSize/2), x + newSize, y + newSize);
+    g.drawLine(x + newSize, y + newSize, x + (newSize *2), y + (newSize/2));
     
-    
-    
+   
     //Second Pyramid
-    x += 30; //sliding the pyramid over slightly
-    y += 30; //sliding the pyramid over slightly
+    x += 10; //sliding the pyramid over slightly
+    y += 10; //sliding the pyramid over slightly
     
     newSize = newSize * 0.75;    //shrinking it 25%
     
     //top + middle
-    
-    g.drawLine(x, y, x + newSize, 10+newSize);
+    g.drawLine(x, y, x + newSize, y+newSize);
     g.drawLine(x, y, x - newSize, y+(newSize/2));
     g.drawLine(x, y, x + (newSize *2), y+(newSize/2));
 
     //bottom
-    g.drawLine(x - newSize, y + (newSize/2), x + newSize, 10 + newSize);
-    g.drawLine(x + newSize, 10 + newSize, x + (newSize *2), y + (newSize/2));
-      
+    g.drawLine(x - newSize, y + (newSize/2), x + newSize, y + newSize);
+    g.drawLine(x + newSize, y + newSize, x + (newSize *2), y + (newSize/2));
+     
     
     //Third Pyramid
-    x += 60; //sliding the pyramid over slightly
-    y += 60; //sliding the pyramid over slightly
+    x += 10; //sliding the pyramid over slightly
+    y += 10; //sliding the pyramid over slightly
     
     newSize =  newSize * 0.75;   //shrinking it 25%
     
-    //top + middle
-    
-    g.drawLine(x, y, x + newSize, 10+newSize);
+     //top + middle
+    g.drawLine(x, y, x + newSize, y+newSize);
     g.drawLine(x, y, x - newSize, y+(newSize/2));
     g.drawLine(x, y, x + (newSize *2), y+(newSize/2));
 
     //bottom
-    g.drawLine(x - newSize, y + (newSize/2), x + newSize, 10 + newSize);
-    g.drawLine(x + newSize, 10 + newSize, x + (newSize *2), y + (newSize/2));
-       
+    g.drawLine(x - newSize, y + (newSize/2), x + newSize, y + newSize);
+    g.drawLine(x + newSize, y + newSize, x + (newSize *2), y + (newSize/2));
+      
   
   } 
 }
