@@ -51,7 +51,7 @@ String x_pos = JOptionPane.showInputDialog(this, "X Position?");
     x += 10; //sliding the pyramid over slightly
     y += 10; //sliding the pyramid over slightly
     
-    newSize = newSize * 0.75;    //shrinking it 25%
+    newSize = newSize * 3 /4;    //shrinking it 25%
     
     //top + middle
     g.drawLine(x, y, x + newSize, y+newSize);
@@ -67,7 +67,7 @@ String x_pos = JOptionPane.showInputDialog(this, "X Position?");
     x += 10; //sliding the pyramid over slightly
     y += 10; //sliding the pyramid over slightly
     
-    newSize =  newSize * 0.75;   //shrinking it 25%
+    newSize =  newSize * 3 /4;   //shrinking it 25%
     
      //top + middle
     g.drawLine(x, y, x + newSize, y+newSize);
