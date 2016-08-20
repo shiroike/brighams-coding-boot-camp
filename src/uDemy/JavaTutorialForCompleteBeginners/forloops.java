@@ -19,10 +19,8 @@ public class forloops {
             System.out.printf("The value of i is: %d\n",i);
             System.out.println("Hello");
             
-            
+         
         }
         }
         
     }
-
-}
