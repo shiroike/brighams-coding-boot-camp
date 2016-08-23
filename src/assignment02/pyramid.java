@@ -9,8 +9,6 @@ import java.awt.Color;
  *
  * @author yujiharashima
  */
-public class pyramid {
-
 // is a is synonymous with extends
 // has a is synonymous with implements
 
@@ -38,6 +36,7 @@ String x_pos = JOptionPane.showInputDialog(this, "X Position?");
     // Draw First Pyramid (recommend that drawing start at top of pyramid)
     // Remember to look up drawline() method in the book for usage. I removed the parameters in the code below for you to implement.
     //top + middle
+    g.setColor(Color.red);
     g.drawLine(x, y, x + newSize, y+newSize);
     g.drawLine(x, y, x - newSize, y+(newSize/2));
     g.drawLine(x, y, x + (newSize *2), y+(newSize/2));
