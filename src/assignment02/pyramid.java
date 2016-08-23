@@ -15,7 +15,7 @@ import java.awt.Color;
 // Pyramid is a child of parent JApplet
 // Pyramid derives its class from JApplet
 
-public class Pyramid extends JApplet{
+public class pyramid extends JApplet{
   int x;
   int y;
   int newSize;
