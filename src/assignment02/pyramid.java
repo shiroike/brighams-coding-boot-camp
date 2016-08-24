@@ -53,9 +53,9 @@ String x_pos = JOptionPane.showInputDialog(this, "X Position?");
     newSize = newSize * 3 /4;    //shrinking it 25%
     
     //top + middle
-    g.drawLine(x, y, x + newSize, y+newSize);
-    g.drawLine(x, y, x - newSize, y+(newSize/2));
-    g.drawLine(x, y, x + (newSize *2), y+(newSize/2));
+    g.drawLine(x + 10, y + 10, x + newSize + 10, y+newSize + 10);
+    g.drawLine(x + 10, y + 10, x - newSize +10, y+(newSize/2 +10));
+    g.drawLine(x + 10, y + 10, x + (newSize *2)+10, y+(newSize/2)+10);
 
     //bottom
     g.drawLine(x - newSize, y + (newSize/2), x + newSize, y + newSize);
