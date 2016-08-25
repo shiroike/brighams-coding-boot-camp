@@ -18,6 +18,7 @@ import java.awt.Color;
 public class pyramid extends JApplet{
   int x;
   int y;
+  int originalx, originaly;
   int newSize;
  
 // starting point of japplet
@@ -25,7 +26,9 @@ public class pyramid extends JApplet{
 String x_pos = JOptionPane.showInputDialog(this, "X Position?");
 // convert String to Integer and store in x
     x = Integer.parseInt(x_pos);
+    originalx = x;
     y = Integer.parseInt(JOptionPane.showInputDialog(this, "Y Position?"));
+    originaly =y;
     newSize = Integer.parseInt(JOptionPane.showInputDialog(this, "Size? (1-50)"));
   }
  
@@ -47,15 +50,15 @@ String x_pos = JOptionPane.showInputDialog(this, "X Position?");
     
    
     //Second Pyramid
-    x += 10; //sliding the pyramid over slightly
-    y += 10; //sliding the pyramid over slightly
+    x += 50; //sliding the pyramid over slightly
+    y += 50; //sliding the pyramid over slightly
     
     newSize = newSize * 3 /4;    //shrinking it 25%
     
     //top + middle
-    g.drawLine(x + 10, y + 10, x + newSize + 10, y+newSize + 10);
-    g.drawLine(x + 10, y + 10, x - newSize +10, y+(newSize/2 +10));
-    g.drawLine(x + 10, y + 10, x + (newSize *2)+10, y+(newSize/2)+10);
+    g.drawLine(x, y , x + newSize, y+newSize );
+    g.drawLine(x, y , x - newSize, y+(newSize/2));
+    g.drawLine(x, y , x + (newSize *2), y+(newSize/2));
 
     //bottom
     g.drawLine(x - newSize, y + (newSize/2), x + newSize, y + newSize);
@@ -63,8 +66,8 @@ String x_pos = JOptionPane.showInputDialog(this, "X Position?");
      
     
     //Third Pyramid
-    x += 10; //sliding the pyramid over slightly
-    y += 10; //sliding the pyramid over slightly
+    x += 50; //sliding the pyramid over slightly
+    y += 50; //sliding the pyramid over slightly
     
     newSize =  newSize * 3 /4;   //shrinking it 25%
     
@@ -77,9 +80,8 @@ String x_pos = JOptionPane.showInputDialog(this, "X Position?");
     g.drawLine(x - newSize, y + (newSize/2), x + newSize, y + newSize);
     g.drawLine(x + newSize, y + newSize, x + (newSize *2), y + (newSize/2));
       
-  
+  x = originalx;
+  y = originaly;
   } 
 }
  
-
-}
