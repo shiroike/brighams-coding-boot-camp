@@ -25,7 +25,7 @@ public class pyramid extends JApplet{
   public void init()  {
 String x_pos = JOptionPane.showInputDialog(this, "X Position?");
 // convert String to Integer and store in x
-    x = Integer.parseInt(x_pos);
+    this.x = Integer.parseInt(x_pos);
     originalx = x;
     y = Integer.parseInt(JOptionPane.showInputDialog(this, "Y Position?"));
     originaly =y;
