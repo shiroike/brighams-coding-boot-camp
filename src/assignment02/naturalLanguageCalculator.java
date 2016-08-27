@@ -43,10 +43,27 @@ public class naturalLanguageCalculator {
      */
     private static String integerToWord(int number) {
      switch(number) {
+         case 0:
+             return "zero";
          case 1:
              return "one";
          case 2:
              return "two";
+         case 3:
+             return "three";
+         case 4:
+             return "four";
+         case 5:
+             return "five";
+         case 6:
+             return "six";
+         case 7:
+             return "seven";
+         case 8:
+             return "eight";
+         case 9:
+             return "nine";
+             
      }   // TODO: finish 0 and 3-9
      return "";
     }
@@ -56,7 +73,13 @@ public class naturalLanguageCalculator {
             return "plus";
         } else if (operator.equals("-")) {
             return "minus";
-        }// TODO: finish mult and division
+        } else if (operator.equals("*")){
+            return "multiplication";
+        } else if (operator.equals("/")){
+            return "division";
+        }
+
+// TODO: finish mult and division
         
         return "";
     }
