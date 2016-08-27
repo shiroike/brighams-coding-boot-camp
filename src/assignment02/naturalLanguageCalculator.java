@@ -1,4 +1,5 @@
 package assignment02;
+import java.util.Scanner;
 /**
  *
  * @author yujiharashima
@@ -7,13 +8,21 @@ public class naturalLanguageCalculator {
    
     
     public static void main(String[] args){
+        Scanner keyboard = new Scanner(System.in);
+        int first, second;
         
-        int first = 1; // ask user for first value, use keyboard.NextInt() ... look at hypotenuse2.java for keyboard
-        int second = 1; // ask user for second value
+        System.out.println("Enter the first digit: ");
+        first = keyboard.nextInt(); // ask user for first value, use keyboard.NextInt() ... look at hypotenuse2.java for keyboard
+        
+        System.out.println("Enter the second digit: ");
+        second = keyboard.nextInt(); // ask user for second value
+        
+        //convert integer to word
         String firstword = integerToWord(first);
         String secondword = integerToWord(second);
         
-        String operator = "+"; // ask user for operator. use keyboard.Next()
+        System.out.println("Enter an operation: ");
+        String operator = keyboard.next(); // ask user for operator. use keyboard.Next()
         
         int result = calculateValues(first, second, operator);
         String sumword = integerToWord(result);
