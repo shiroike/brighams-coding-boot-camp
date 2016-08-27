@@ -26,7 +26,7 @@ public class StringWorkingWithText {
         double myDouble = 7.8;
         
         System.out.println("My number is "+ myDouble + ".");
-        
+       
     }
     
     
