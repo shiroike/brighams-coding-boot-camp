@@ -90,6 +90,11 @@ public class naturalLanguageCalculator {
         } else if (operator.equals("-")) {
             return value1-value2;
         } // TODO: finish mult and division
+          else if (operator.equals("*")){
+            return value1*value2;
+        } else if (operator.equals("/")){
+            return value1/value2;
+        }
         return 0;
     }
     
