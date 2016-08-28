@@ -14,15 +14,15 @@ public class naturalLanguageCalculator {
         System.out.println("Enter the first digit: ");
         first = keyboard.nextInt(); // ask user for first value, use keyboard.NextInt() ... look at hypotenuse2.java for keyboard
         
+        System.out.println("Enter an operation: ");
+        String operator = keyboard.next(); // ask user for operator. use keyboard.Next()
+        
         System.out.println("Enter the second digit: ");
         second = keyboard.nextInt(); // ask user for second value
         
         //convert integer to word
         String firstword = integerToWord(first);
         String secondword = integerToWord(second);
-        
-        System.out.println("Enter an operation: ");
-        String operator = keyboard.next(); // ask user for operator. use keyboard.Next()
         
         int result = calculateValues(first, second, operator);
         String sumword = integerToWord(result);
@@ -74,9 +74,9 @@ public class naturalLanguageCalculator {
         } else if (operator.equals("-")) {
             return "minus";
         } else if (operator.equals("*")){
-            return "multiplication";
+            return "multiply by";
         } else if (operator.equals("/")){
-            return "division";
+            return "divided by";
         }
 
 // TODO: finish mult and division
